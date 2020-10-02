@@ -20,3 +20,17 @@ Route::get('/', function () {
 Auth::routes(['verify' => true]);
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+// For Testing Purpose
+Route::get('/active/page1', function () {
+    return view('home', [
+       'page' => 'ini page 1'
+    ]);
+})->name('active.page1');
+
+Route::get('/active/page2', function () {
+
+    return view('home', [
+       'page' => 'ini page 2'
+    ]);
+})->name('active.page2');

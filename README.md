@@ -18,3 +18,7 @@ For Learning Purpose
 3. Implement mustveryfi email
 4. Looks for the branch for template theme
 
+## Theme Used
+
+Admin LTE 3
+

@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.adminlte')
 
 @section('content')
 <div class="container">
@@ -15,6 +15,11 @@
                     @endif
 
                     {{ __('You are logged in!') }}
+                    
+                    <br>
+                    @if(!empty($page))
+                        <strong>{{$page}}</strong>
+                    @endif
                 </div>
             </div>
         </div>
